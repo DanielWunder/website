@@ -4,7 +4,6 @@ import DatenschutzPage from "./pages/datenschutz/DatenschutzPage";
 import DatenschutzPage2 from "./pages/datenschutz/DatenschutzPage2";
 import ImpressumPage from "./pages/impressum/ImpressumPage";
 import HomePage from "./pages/index/HomePage";
-import LivePage from "./pages/live/LivePage";
 
 const routes: RouteObject[] = [
   {
@@ -13,10 +12,6 @@ const routes: RouteObject[] = [
       {
         path: "",
         element: <HomePage />,
-      },
-      {
-        path: "live/:id",
-        element: <LivePage />,
       },
       {
         path: "datenschutz",
