@@ -18,11 +18,11 @@ const ImpressumPage = () => {
       <p>
         <b>Vorsitzende</b>
         <br />
-        Viktor Wiebe
+        Jakob Isaak
         <br />
-        George Ion
+        Peter Teichreb
         <br />
-        Daniel Wunder
+        Waldemar Wunder
       </p>
       <p>
         <b>Telefon</b>: +49 175 7456418
