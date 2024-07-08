@@ -301,11 +301,11 @@ const DatenschutzPage = () => {
         Für die Bereitstellung unserer Website verwenden wir folgenden Hoster:
       </p>
       <p>
-        GitHub Inc.
+        Microsoft Corporation
         <br />
-        88 Colin P. Kelly Jr. St.
+        One Microsoft Way
         <br />
-        San Francisco, CA 94107
+        Redmond, WA 98052-6399
         <br />
         USA
       </p>
@@ -334,45 +334,12 @@ const DatenschutzPage = () => {
         Daten.
       </p>
       <p>
-        Unser Hosting-Anbieter erhält Ihre personenbezogenen Daten. Dies
-        geschieht gemäß unserem berechtigten Interesse gemäß Art. 6 Abs. 1 S. 1
-        lit. f DSGVO, um keinen eigenen Server in unseren Räumlichkeiten
-        betreiben zu müssen. Die Server befinden sich in den USA.
-      </p>
-      <p>
-        Weitere Informationen zu Widerspruchs- und Beseitigungsmöglichkeiten
-        gegenüber GitHub finden Sie unter:
-        <a
-          href="https://docs.github.com/en/free-pro-team@latest/github/site-policy/github-privacy-statement#github-pages"
-          target="_blank"
-          rel="noreferrer"
-        >
-          https://docs.github.com/en/free-pro-team@latest/github/site-policy/github-privacy-statement#github-pages
-        </a>
-      </p>
-      <p>
-        Sie haben das Recht der Verarbeitung zu widersprechen. Ob der
-        Widerspruch erfolgreich ist, ist im Rahmen einer Interessenabwägung zu
-        ermitteln. Die Daten werden gelöscht, sobald der Zweck der Verarbeitung
-        entfällt. Die Verarbeitung der unter diesem Abschnitt angegebenen Daten
-        ist weder gesetzlich noch vertraglich vorgeschrieben. Die
-        Funktionsfähigkeit der Website ist ohne die Verarbeitung nicht
-        gewährleistet.
-      </p>
-      <p>
-        GitHub hat Compliance-Maßnahmen für internationale Datenübermittlungen
-        umgesetzt. Diese gelten für alle weltweiten Aktivitäten, bei denen
-        GitHub personenbezogene Daten von natürlichen Personen in der EU
-        verarbeitet. Diese Maßnahmen basieren auf den
-        EU-Standardvertragsklauseln (SCCs). Weitere Informationen finden Sie
-        unter:
-        <a
-          href="https://docs.github.com/en/free-pro-team@latest/github/site-policy/github-data-protection-addendum#attachment-1–the-standard-contractual-clauses-processors"
-          target="_blank"
-          rel="noreferrer"
-        >
-          https://docs.github.com/en/free-pro-team@latest/github/site-policy/github-data-protection-addendum#attachment-1–the-standard-contractual-clauses-processors
-        </a>
+        Dies kann auch eine Übermittlung von personenbezogenen Daten in ein Land
+        außerhalb der Europäischen Union bedeuten. Die Übermittlung der Daten in
+        die USA erfolgt aufgrund Art. 45 DSGVO iVm der
+        Angemessenheitsentscheidung C(2023) 4745 der Europäischen Kommission, da
+        sich der Datenempfänger zur Einhaltung der Grundsätze der
+        Datenverarbeitung des Data Pricacy Frameworks (DPF) verpflichtet hat.
       </p>
     </Container>
   );
