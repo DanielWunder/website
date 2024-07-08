@@ -4,6 +4,7 @@ import DatenschutzPage from "./pages/datenschutz/DatenschutzPage";
 import DatenschutzPage2 from "./pages/datenschutz/DatenschutzPage2";
 import ImpressumPage from "./pages/impressum/ImpressumPage";
 import HomePage from "./pages/index/HomePage";
+import NotFoundPage from "./pages/notFound/NotFoundPage";
 
 const routes: RouteObject[] = [
   {
@@ -24,6 +25,10 @@ const routes: RouteObject[] = [
       {
         path: "impressum",
         element: <ImpressumPage />,
+      },
+      {
+        path: "*",
+        element: <NotFoundPage />,
       },
     ],
   },
