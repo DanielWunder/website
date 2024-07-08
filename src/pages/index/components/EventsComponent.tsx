@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-import { memo, useRef } from "react";
+import { memo } from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
@@ -13,7 +13,7 @@ const data = [
 ];
 const EventsComponent = () => {
   // const [imageLinks, setImageLinks] = useState<string[]>([]);
-  const loaded = useRef(false);
+  // const loaded = useRef(false);
   var imageLinks: string[] = [];
 
   if (data) {
@@ -24,7 +24,7 @@ const EventsComponent = () => {
           new Date(row.startDate) < dateNow &&
           dateNow < new Date(row.endDate)
         ) {
-          if (row.type == "images") {
+          if (row.type === "images") {
             imageLinks = row.links;
           }
         }

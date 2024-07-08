@@ -1,5 +1,5 @@
 import { createTheme, ThemeProvider } from "@mui/material";
-import { blueGrey, grey, indigo } from "@mui/material/colors";
+import { blueGrey, grey } from "@mui/material/colors";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -10,17 +10,6 @@ import routes from "./routes";
 const router = createBrowserRouter(routes);
 
 const theme = createTheme({
-  palette: {
-    primary: indigo,
-    secondary: blueGrey,
-  },
-  typography: {
-    fontFamily:
-      "'Quicksand', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif",
-  },
-});
-
-const theme2 = createTheme({
   palette: {
     primary: blueGrey,
     secondary: grey,
@@ -36,7 +25,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <ThemeProvider theme={theme2}>
+    <ThemeProvider theme={theme}>
       <RouterProvider router={router} />
     </ThemeProvider>
   </React.StrictMode>
