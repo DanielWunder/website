@@ -84,6 +84,31 @@ const DateTableRow = (props: DateTableRowProps) => {
 };
 
 const HomePage = () => {
+  var events = <></>;
+  var today = new Date();
+  if (today.toISOString() < "2024-09-30") {
+    events = (
+      <>
+        <Typography variant="h5" mt={2}>
+          Erntedankfest
+        </Typography>
+        <TableContainer
+          component={Paper}
+          sx={{
+            maxWidth: 550,
+            display: "inline-block",
+            backgroundColor: "#e8eaf6",
+          }}
+        >
+          <Table>
+            <TableBody>
+              <DateTableRow day="So 29.09." time="10" name="Erntedankfest" />
+            </TableBody>
+          </Table>
+        </TableContainer>
+      </>
+    );
+  }
   return (
     <>
       <ImageBackground>
@@ -124,59 +149,7 @@ const HomePage = () => {
             </TableBody>
           </Table>
         </TableContainer>
-        {/* <Typography variant="h5" mt={2}>
-          Pfingsten
-        </Typography>
-        <TableContainer
-          component={Paper}
-          sx={{
-            maxWidth: 550,
-            display: "inline-block",
-            backgroundColor: "#e8eaf6",
-          }}
-        >
-          <Table>
-            <TableBody>
-              <DateTableRow
-                day="So 19.05."
-                time="10"
-                name="Pfingstgottesdienst"
-              />
-              <DateTableRow
-                day="So 19.05."
-                time="16"
-                name="Pfingstgottesdienst"
-              />
-            </TableBody>
-          </Table>
-        </TableContainer>
-        <Typography variant="h5" mt={2}>
-          Taufe
-        </Typography>
-        <TableContainer
-          component={Paper}
-          sx={{
-            maxWidth: 550,
-            display: "inline-block",
-            backgroundColor: "#e8eaf6",
-          }}
-        >
-          <Table>
-            <TableBody>
-              <DateTableRow
-                day="Mo 20.05."
-                time="9"
-                name="Taufe"
-                info="Seeweg 1, 33397 Rietberg"
-              />
-              <DateTableRow
-                day="Mo 20.05."
-                time="11:30"
-                name="Taufgottesdienst"
-              />
-            </TableBody>
-          </Table>
-        </TableContainer> */}
+        {events}
         <Title id="glaubensbekenntnis" title="Glaubenbekenntnis" />
         <Typography variant="h5">Wir sind</Typography>
         <ul style={{ textAlign: "left" }}>
