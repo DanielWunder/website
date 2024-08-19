@@ -24,6 +24,9 @@ const ImageBackground = styled.div`
   color: white;
   transform-style: preserve-3d;
   background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
