@@ -225,7 +225,7 @@ const HomePage = () => {
             <Typography>
               den Menschen, die in Schuld und Ausweglosigkeit leben, helfen,
               sich für Jesus Christus zu entscheiden, und dadurch den Weg zum
-              wahren, sinnerfüllten und ewigen Leben zu finden.
+              wahren, mit Sinn erfüllten und ewigen Leben zu finden.
             </Typography>
           </li>
         </ul>
