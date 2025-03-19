@@ -3,7 +3,7 @@ const ImpressumPage = () => {
     <>
       <h1>Impressum</h1>
       <p>
-        <b>Verein zur Förderung der Baptisten Brüder Gemeinde Delbrück e.V.</b>
+        <b>Verein zur Förderung der Evangeliums-Christen Baptisten Delbrück e.V.</b>
         <br />
         Schwalbenweg 6<br />
         33129 Delbrück
@@ -18,11 +18,11 @@ const ImpressumPage = () => {
       <p>
         <b>Vorsitzende</b>
         <br />
-        Jakob Isaak
+        Viktor Wiebe
         <br />
-        Peter Teichreb
+        George Ion
         <br />
-        Waldemar Wunder
+        Daniel Wunder
       </p>
       <p>
         <b>Telefon</b>: +49 175 7456418
