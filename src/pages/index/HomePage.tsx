@@ -89,11 +89,11 @@ const DateTableRow = (props: DateTableRowProps) => {
 const HomePage = () => {
   var events = <></>;
   var today = new Date();
-  if (today.toISOString() < "2024-12-27") {
+  if (today.toISOString() < "2025-04-22") {
     events = (
       <>
         <Typography variant="h5" mt={2}>
-          Weihnachten
+          Ostern
         </Typography>
         <TableContainer
           component={Paper}
@@ -105,9 +105,9 @@ const HomePage = () => {
         >
           <Table>
             <TableBody>
-              <DateTableRow day="Di 24.12." time="16" name="Heiligabend" />
-              <DateTableRow day="Mi 25.12." time="10" name="1. Weihnachtstag" />
-              <DateTableRow day="Mi 25.12." time="16" name="1. Weihnachtstag" />
+              <DateTableRow day="So 20.04." time="10" name="Gottesdienst" />
+              <DateTableRow day="So 20.04." time="16" name="Gottesdienst" />
+              <DateTableRow day="Mo 21.04." time="10" name="Gottesdienst" />
             </TableBody>
           </Table>
         </TableContainer>
