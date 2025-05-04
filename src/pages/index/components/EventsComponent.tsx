@@ -5,10 +5,10 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const data = [
   {
-    startDate: "2025-03-31",
-    endDate: "2025-04-22",
+    startDate: "2025-05-01",
+    endDate: "2025-05-19",
     type: "images",
-    links: ["/ostern-rueckseite.jpg", "/ostern-vorderseite.jpg"],
+    links: ["/bibelwoche-vorderseite.jpg", "/bibelwoche-rueckseite.jpg"],
   },
 ];
 const EventsComponent = () => {
