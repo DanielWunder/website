@@ -5,10 +5,10 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const data = [
   {
-    startDate: "2025-05-01",
-    endDate: "2025-05-19",
+    startDate: "2025-09-01",
+    endDate: "2025-09-15",
     type: "images",
-    links: ["/bibelwoche-vorderseite.jpg", "/bibelwoche-rueckseite.jpg"],
+    links: ["/erntedankfest_1.jpg", "/erntedankfest_2.jpg"],
   },
 ];
 const EventsComponent = () => {

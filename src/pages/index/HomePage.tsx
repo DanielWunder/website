@@ -89,11 +89,11 @@ const DateTableRow = (props: DateTableRowProps) => {
 const HomePage = () => {
   var events = <></>;
   var today = new Date();
-  if (today.toISOString() < "2025-04-22") {
+  if (today.toISOString() < "2025-09-15") {
     events = (
       <>
         <Typography variant="h5" mt={2}>
-          Ostern
+          Erntedankfest
         </Typography>
         <TableContainer
           component={Paper}
@@ -105,9 +105,7 @@ const HomePage = () => {
         >
           <Table>
             <TableBody>
-              <DateTableRow day="So 20.04." time="10" name="Gottesdienst" />
-              <DateTableRow day="So 20.04." time="16" name="Gottesdienst" />
-              <DateTableRow day="Mo 21.04." time="10" name="Gottesdienst" />
+              <DateTableRow day="So 14.09." time="10" name="Erntedankfest" />
             </TableBody>
           </Table>
         </TableContainer>
