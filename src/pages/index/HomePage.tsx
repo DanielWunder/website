@@ -89,11 +89,38 @@ const DateTableRow = (props: DateTableRowProps) => {
 const HomePage = () => {
   var events = <></>;
   var today = new Date();
-  if (today.toISOString() < "2025-09-15") {
+  if (today.toISOString() < "2025-10-06") {
     events = (
       <>
+        {today.toISOString() < "2025-09-15" ? (
+          <>
+            <Typography variant="h5" mt={2}>
+              Erntedankfest
+            </Typography>
+            <TableContainer
+              component={Paper}
+              sx={{
+                maxWidth: 550,
+                display: "inline-block",
+                backgroundColor: "#e8eaf6",
+              }}
+            >
+              <Table>
+                <TableBody>
+                  <DateTableRow
+                    day="So 14.09."
+                    time="10"
+                    name="Erntedankfest"
+                  />
+                </TableBody>
+              </Table>
+            </TableContainer>
+          </>
+        ) : (
+          <></>
+        )}
         <Typography variant="h5" mt={2}>
-          Erntedankfest
+          Stadthalle Delbrück
         </Typography>
         <TableContainer
           component={Paper}
@@ -105,7 +132,21 @@ const HomePage = () => {
         >
           <Table>
             <TableBody>
-              <DateTableRow day="So 14.09." time="10" name="Erntedankfest" />
+              <DateTableRow
+                day="Fr 03.10."
+                time="17"
+                name="Weißt du, dass du für den Himmel gemacht bist?"
+              />
+              <DateTableRow
+                day="Sa 04.10."
+                time="17"
+                name="Gibt es Gott? Wenn ja, was dann?"
+              />
+              <DateTableRow
+                day="So 05.10."
+                time="11"
+                name="Willst du wissen, was Gott dir schon immer sagen wollte?"
+              />
             </TableBody>
           </Table>
         </TableContainer>

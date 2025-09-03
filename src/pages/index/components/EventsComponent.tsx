@@ -10,6 +10,12 @@ const data = [
     type: "images",
     links: ["/erntedankfest_1.jpg", "/erntedankfest_2.jpg"],
   },
+  {
+    startDate: "2025-09-02",
+    endDate: "2025-10-06",
+    type: "images",
+    links: ["/stadthalle-1.jpg", "/stadthalle-2.jpg"],
+  },
 ];
 const EventsComponent = () => {
   // const [imageLinks, setImageLinks] = useState<string[]>([]);
@@ -25,7 +31,7 @@ const EventsComponent = () => {
           dateNow < new Date(row.endDate)
         ) {
           if (row.type === "images") {
-            imageLinks = row.links;
+            imageLinks = imageLinks.concat(row.links);
           }
         }
       }
