@@ -5,16 +5,10 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const data = [
   {
-    startDate: "2025-09-01",
-    endDate: "2025-09-15",
+    startDate: "2025-11-01",
+    endDate: "2025-12-08",
     type: "images",
-    links: ["/erntedankfest_1.jpg", "/erntedankfest_2.jpg"],
-  },
-  {
-    startDate: "2025-09-02",
-    endDate: "2025-10-06",
-    type: "images",
-    links: ["/stadthalle-1.jpg", "/stadthalle-2.jpg"],
+    links: ["/adventsgottesdienst2.jpg", "/adventsgottesdienst1.jpg"],
   },
 ];
 const EventsComponent = () => {
