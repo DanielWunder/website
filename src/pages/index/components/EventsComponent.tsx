@@ -10,6 +10,12 @@ const data = [
     type: "images",
     links: ["/adventsgottesdienst2.jpg", "/adventsgottesdienst1.jpg"],
   },
+  {
+    startDate: "2025-11-30",
+    endDate: "2025-12-26",
+    type: "images",
+    links: ["/weihnachten1.jpg", "/weihnachten2.jpg"],
+  },
 ];
 const EventsComponent = () => {
   // const [imageLinks, setImageLinks] = useState<string[]>([]);
