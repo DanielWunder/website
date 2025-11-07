@@ -89,33 +89,66 @@ const DateTableRow = (props: DateTableRowProps) => {
 const HomePage = () => {
   var events = <></>;
   var today = new Date();
-  if (today.toISOString() < "2025-12-08") {
-    events = (
-      <>
-        <Typography variant="h5" mt={2}>
-          Adventsgottesdienst
-        </Typography>
-        <TableContainer
-          component={Paper}
-          sx={{
-            maxWidth: 550,
-            display: "inline-block",
-            backgroundColor: "#e8eaf6",
-          }}
-        >
-          <Table>
-            <TableBody>
-              <DateTableRow
-                day="So 07.12."
-                time="16"
-                name="Adventsgottesdienst"
-              />
-            </TableBody>
-          </Table>
-        </TableContainer>
-      </>
-    );
-  }
+  
+  events = (
+    <>
+      {(today.toISOString() < "2025-12-08") ? 
+      (<><Typography variant="h5" mt={2}>
+        Adventsgottesdienst
+      </Typography>
+      <TableContainer
+        component={Paper}
+        sx={{
+          maxWidth: 550,
+          display: "inline-block",
+          backgroundColor: "#e8eaf6",
+        }}
+      >
+        <Table>
+          <TableBody>
+            <DateTableRow
+              day="So 07.12."
+              time="16"
+              name="Adventsgottesdienst"
+            />
+          </TableBody>
+        </Table>
+      </TableContainer></>) : <></>}
+      {(today.toISOString() > "2025-11-29" && today.toISOString() < "2025-12-27") ? 
+      (<><Typography variant="h5" mt={2}>
+        Weihnachten
+      </Typography>
+      <TableContainer
+        component={Paper}
+        sx={{
+          maxWidth: 550,
+          display: "inline-block",
+          backgroundColor: "#e8eaf6",
+        }}
+      >
+        <Table>
+          <TableBody>
+            <DateTableRow
+              day="Mi 24.12."
+              time="16"
+              name="Gottesdienst"
+            />
+            <DateTableRow
+              day="Do 25.12."
+              time="10"
+              name="Gottesdienst"
+            />
+            <DateTableRow
+              day="Do 25.12."
+              time="16"
+              name="Gottesdienst"
+            />
+          </TableBody>
+        </Table>
+      </TableContainer></>) : <></>}
+    </>
+  );
+  
   return (
     <>
       <ImageBackground>
