@@ -5,16 +5,10 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const data = [
   {
-    startDate: "2025-11-01",
-    endDate: "2025-12-08",
-    type: "images",
-    links: ["/adventsgottesdienst2.jpg", "/adventsgottesdienst1.jpg"],
-  },
-  {
     startDate: "2025-11-30",
-    endDate: "2025-12-26",
+    endDate: "2025-12-27",
     type: "images",
-    links: ["/weihnachten1.jpg", "/weihnachten2.jpg"],
+    links: ["/weihnachten2.jpg", "/weihnachten1.jpg"],
   },
 ];
 const EventsComponent = () => {

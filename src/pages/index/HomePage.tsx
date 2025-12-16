@@ -92,28 +92,6 @@ const HomePage = () => {
   
   events = (
     <>
-      {(today.toISOString() < "2025-12-08") ? 
-      (<><Typography variant="h5" mt={2}>
-        Adventsgottesdienst
-      </Typography>
-      <TableContainer
-        component={Paper}
-        sx={{
-          maxWidth: 550,
-          display: "inline-block",
-          backgroundColor: "#e8eaf6",
-        }}
-      >
-        <Table>
-          <TableBody>
-            <DateTableRow
-              day="So 07.12."
-              time="16"
-              name="Adventsgottesdienst"
-            />
-          </TableBody>
-        </Table>
-      </TableContainer></>) : <></>}
       {(today.toISOString() > "2025-11-29" && today.toISOString() < "2025-12-27") ? 
       (<><Typography variant="h5" mt={2}>
         Weihnachten
