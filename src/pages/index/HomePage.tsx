@@ -92,9 +92,9 @@ const HomePage = () => {
   
   events = (
     <>
-      {(today.toISOString() > "2025-11-29" && today.toISOString() < "2025-12-27") ? 
+      {(today.toISOString() > "2026-03-15" && today.toISOString() < "2026-04-07") ? 
       (<><Typography variant="h5" mt={2}>
-        Weihnachten
+        Christi Auferstehung
       </Typography>
       <TableContainer
         component={Paper}
@@ -107,18 +107,18 @@ const HomePage = () => {
         <Table>
           <TableBody>
             <DateTableRow
-              day="Mi 24.12."
-              time="16"
-              name="Gottesdienst"
-            />
-            <DateTableRow
-              day="Do 25.12."
+              day="So 05.04."
               time="10"
               name="Gottesdienst"
             />
             <DateTableRow
-              day="Do 25.12."
+              day="So 05.04."
               time="16"
+              name="Gottesdienst"
+            />
+            <DateTableRow
+              day="Mo 06.04."
+              time="10"
               name="Gottesdienst"
             />
           </TableBody>
