@@ -1,6 +1,11 @@
 {
     "navigationFallback": {
-      "rewrite": "index.html",
-      "exclude": ["/images/*.{png,jpg,gif,ico}", "/*.{css,scss,js}"]
+      "rewrite": "/index.html",
+      "exclude": ["/images/*.{png,jpg,gif,ico}", "*.{css,scss,js}"]
+    },
+    "build": {
+      "appLocation": "/",
+      "outputLocation": "dist",
+      "appBuildCommand": "npm run build"
     }
 }

@@ -4,26 +4,18 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const data = [
-  {
-    startDate: "2026-03-15",
-    endDate: "2026-04-07",
-    type: "images",
-    links: ["/ostern1.jpeg", "/ostern2.jpeg"],
-  },
-];
-const data2 = [
-  {
-    startDate: "2026-04-01",
-    endDate: "2026-04-27",
+   {
+    startDate: "2026-09-29",
+    endDate: "2026-10-19",
     type: "images",
     links: ["/bibelwoche1.jpeg", "/bibelwoche2.jpeg"],
   },
 ];
+const data2 = [];
 const EventsComponent = () => {
   // const [imageLinks, setImageLinks] = useState<string[]>([]);
   // const loaded = useRef(false);
   var imageLinks: string[] = [];
-  var imageLinks2: string[] = [];
 
   if (data) {
     var dateNow = new Date();
@@ -35,18 +27,6 @@ const EventsComponent = () => {
         ) {
           if (row.type === "images") {
             imageLinks = imageLinks.concat(row.links);
-          }
-        }
-      }
-    }
-    for (let row of data2) {
-      if (row) {
-        if (
-          new Date(row.startDate) < dateNow &&
-          dateNow < new Date(row.endDate)
-        ) {
-          if (row.type === "images") {
-            imageLinks2 = imageLinks2.concat(row.links);
           }
         }
       }
@@ -85,7 +65,7 @@ const EventsComponent = () => {
   //     });
   // }, []);
 
-  if (imageLinks.length > 0 || imageLinks2.length  > 0) {
+  if (imageLinks.length > 0) {
     return (
       <>
         {imageLinks.length > 0 ?
@@ -98,25 +78,6 @@ const EventsComponent = () => {
           interval={5000}
         >
           {imageLinks.map((link, index) => (
-            <div key={index}>
-              <img
-                alt="Bild konnte nicht geladen werden"
-                src={link}
-                style={{ maxWidth: "600px" }}
-              />
-            </div>
-          ))}
-        </Carousel></Box>) : (<></>)}
-        {imageLinks2.length > 0 ?
-        (<Box p={2}><Carousel
-          showStatus={false}
-          showArrows={false}
-          showThumbs={false}
-          autoPlay={true}
-          infiniteLoop={true}
-          interval={5000}
-        >
-          {imageLinks2.map((link, index) => (
             <div key={index}>
               <img
                 alt="Bild konnte nicht geladen werden"
