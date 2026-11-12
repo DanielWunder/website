@@ -92,9 +92,9 @@ const HomePage = () => {
   
   events = (
     <>
-      {(today.toISOString() < "2026-04-07") ? 
+      {(today.toISOString() < "2026-12-07") ? 
       (<><Typography variant="h5" mt={2}>
-        Christi Auferstehung
+        Adventssingen
       </Typography>
       <TableContainer
         component={Paper}
@@ -107,66 +107,9 @@ const HomePage = () => {
         <Table>
           <TableBody>
             <DateTableRow
-              day="So 05.04."
-              time="10"
-              name="Gottesdienst"
-            />
-            <DateTableRow
-              day="So 05.04."
+              day="So 06.12."
               time="16"
-              name="Gottesdienst"
-            />
-            <DateTableRow
-              day="Mo 06.04."
-              time="10"
-              name="Gottesdienst"
-            />
-          </TableBody>
-        </Table>
-      </TableContainer></>) : <></>}
-      {(today.toISOString() < "2026-04-27") ? 
-      (<><Typography variant="h5" mt={2}>
-        Bibelwoche
-      </Typography>
-      <TableContainer
-        component={Paper}
-        sx={{
-          maxWidth: 550,
-          display: "inline-block",
-          backgroundColor: "#e8eaf6",
-        }}
-      >
-        <Table>
-          <TableBody>
-            <DateTableRow
-              day="Mo 20.04."
-              time="19"
-              name="Dienst als Gebot Gottes"
-            />
-            <DateTableRow
-              day="Di 21.04."
-              time="19"
-              name="Wer darf dienen?"
-            />
-            <DateTableRow
-              day="Mi 22.04."
-              time="19"
-              name="Dienst im und am Haus Gottes"
-            />
-            <DateTableRow
-              day="Do 23.04."
-              time="19"
-              name="Ein verkehrter Dienst dem Herrn ein Gräuel"
-            />
-            <DateTableRow
-              day="Fr 24.04."
-              time="19"
-              name="Der faule Knecht"
-            />
-            <DateTableRow
-              day="So 26.04."
-              time="10"
-              name="Evangelistischer Gottesdienst"
+              name="Adventssingen"
             />
           </TableBody>
         </Table>
