@@ -5,10 +5,10 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const data = [
    {
-    startDate: "2026-09-29",
-    endDate: "2026-10-19",
+    startDate: "2026-11-11",
+    endDate: "2026-12-07",
     type: "images",
-    links: ["/bibelwoche1.jpeg", "/bibelwoche2.jpeg"],
+    links: ["/adventssingen1.jpeg", "/adventssingen2.jpeg"],
   },
 ];
 const data2 = [];
